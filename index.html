@@ -253,7 +253,7 @@
 
                     <div class="row">
                         <div class="col-md-7 code-sample">
-                            <img src="/images/repl.png" alt="repl image" />
+                            <img src="/images/repl.png" alt="repl image mobile" />
                         </div>
 
                         <div class="col-md-5 code-description">
@@ -439,7 +439,7 @@ macros are only compile-time.
                         <div class="col-md-7 code-sample">
                             <pre><code class="language-lisp">lfe&gt; (lists:reverse
        (erlang:integer_to_list
-          (lists:foldl #'*/2 1 '(1 2 3 4))))
+         (lists:foldl #'*/2 1 '(1 2 3 4))))
 &quot;42&quot;
 
 lfe&gt; (supervisor:which_children 'kernel_sup)
@@ -475,17 +475,17 @@ Erlang function to get information about a particular supervision tree.
                             <pre><code class="language-lisp">(defmodule server
   (behaviour gen_server)
   (export
-    (start_link 0)
-    (stop 0)
-    ...))
+   (start_link 0)
+   (stop 0)
+   ...))
 
 (defun handle_call
   (('amount _caller state-data)
-    `#(reply ,state-data ,state-data))
+   `#(reply ,state-data ,state-data))
   (('stop _caller state-data)
-    `#(stop shutdown ok state-data))
+   `#(stop shutdown ok state-data))
   ((message _caller state-data)
-    `#(reply ,(unknown-command) ,state-data)))
+   `#(reply ,(unknown-command) ,state-data)))
 </code></pre>
 
                         </div>
@@ -505,7 +505,7 @@ languages. In LFE, you get to use the real deal.
                 LFE is not a casual Lisp. It's a Lisp for those who want to build distributed
 applications -- like the Erlang software that powers 40% of the world's
 telecommunications.
-                <a class="btn btn-primary btn-sm" href="#"
+                <a class="btn btn-primary btn-sm" href="&#x2F;learn"
                     role="button">Learn More &raquo;</a></p>
         </div>
     </div>
@@ -781,7 +781,7 @@ start your prototype as a release, with zero pain and all of the benefit.
                 <h1>Give yourself to the Lisp-side of the Force!</h1>
 
                 <div class="dark-border-wrap">
-                    <a href="http://xkcd.com/297/"><img src="/images/xkcd-lisp-cycles.png" alt="call-out content" /></a>
+                    <a href="http://xkcd.com/297/"><img src="/images/xkcd-lisp-cycles.png" alt="call-out content mobile" /></a>
                 </div>
             </div>
         </div>
@@ -859,6 +859,7 @@ start your prototype as a release, with zero pain and all of the benefit.
 <script type="text/javascript" src="/search_index.en.js"></script>
 <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="/js/search.js"></script>
+<script type="text/javascript" src="/js/app.js"></script>
 <script type="text/javascript" src="/js/highlight.js"></script>
 <script>
     hljs.initHighlightingOnLoad();
@@ -889,7 +890,8 @@ start your prototype as a release, with zero pain and all of the benefit.
                        "\"Where even a distributed Prolog dare not go.\""
                        "\"MACLISP and supervision trees are all that anyone needs.\""
                        "\"Fifty shades of distributed, syntax-free message-passing.\""
-                       "\"Come for the fault-tolerance and high-availability. Stay for the fault-tolerance and high-availability.\"")]
+                       "\"Come for the fault-tolerance and high-availability. Stay for the fault-tolerance and high-availability.\""
+                       "\"A timeless language.\"")]
           [num-quotes (length quotes)])
     (define get-quote (lambda ()
       (list-ref quotes (random-integer num-quotes))))
