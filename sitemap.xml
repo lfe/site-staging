@@ -7,6 +7,25 @@
         <loc>https://lfe.io/about/</loc>
     </url>
     <url>
+        <loc>https://lfe.io/blog/</loc>
+    </url>
+    <url>
+        <loc>https://lfe.io/blog/how-to-post/</loc>
+    </url>
+    <url>
+        <loc>https://lfe.io/blog/posts/</loc>
+    </url>
+    <url>
+        <loc>https://lfe.io/blog/posts/1849-new-lfe-site/</loc>
+        <lastmod>2014-05-22</lastmod>
+    </url>
+    <url>
+        <loc>https://lfe.io/categories/</loc>
+    </url>
+    <url>
+        <loc>https://lfe.io/categories/site/</loc>
+    </url>
+    <url>
         <loc>https://lfe.io/community/</loc>
     </url>
     <url>
@@ -32,6 +51,15 @@
     </url>
     <url>
         <loc>https://lfe.io/plan/yurrriq/</loc>
+    </url>
+    <url>
+        <loc>https://lfe.io/tags/</loc>
+    </url>
+    <url>
+        <loc>https://lfe.io/tags/news/</loc>
+    </url>
+    <url>
+        <loc>https://lfe.io/tags/web/</loc>
     </url>
     <url>
         <loc>https://lfe.io/use/</loc>
