@@ -102,11 +102,11 @@
             
             
             
-            <a class="nav-link dropdown-toggle selected" href="#" id="navbar-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+            <a class="nav-link dropdown-toggle " href="#" id="navbar-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
             <div class="dropdown-menu blog-nav-dropdown" aria-labelledby="navbar-dropdown">
               <a class="dropdown-item" href="&#x2F;blog&#x2F;">Latest Posts</a>
               <a class="dropdown-item-divider" href="#"><hr class="blog-dropdown-divider"/></a>
-              <a class="dropdown-item" href="&#x2F;blog&#x2F;archives">Archives</a>
+              <a class="dropdown-item" href="&#x2F;blog&#x2F;posts">Archives</a>
               <a class="dropdown-item" href="&#x2F;blog&#x2F;categories">Categories</a>
               <a class="dropdown-item" href="&#x2F;blog&#x2F;tags">Tags</a>
               <a class="dropdown-item" href="&#x2F;blog&#x2F;authors">Authors</a>
@@ -167,73 +167,50 @@
     <br />
     It's snappy!
 </div>
+<br />
 <p><a class="btn btn-primary btn-sm" href="how-to-post" role="button">Submit a post!</a></p>
-<pre style="background-color:#2b303b;">
-<code><span style="color:#cd74e8;">let</span><span style="color:#abb2bf;"> highlight </span><span style="color:#adb7c9;">= </span><span style="color:#db9d63;">true</span><span style="color:#abb2bf;">;
 
-</span><span style="color:#cd74e8;">fn </span><span style="color:#5cb3fa;">main</span><span style="color:#abb2bf;">() {
-    println!(</span><span style="color:#9acc76;">&quot;Hello, Oxur!&quot;</span><span style="color:#abb2bf;">);
-}
-</span></code></pre><pre style="background-color:#2b303b;">
-<code><span style="color:#cd74e8;">func </span><span style="color:#5cb3fa;">main</span><span style="color:#abb2bf;">() {
-	</span><span style="font-style:italic;color:#5f697a;">// Create the server object and assign components to it
-	</span><span style="color:#eb6772;">a </span><span style="color:#adb7c9;">:= </span><span style="color:#eb6772;">app</span><span style="color:#abb2bf;">.</span><span style="color:#eb6772;">NewApplication</span><span style="color:#abb2bf;">()
-	</span><span style="font-style:italic;color:#5f697a;">// Bootstrap configuration and logging with defaults; this is to assist with
-	// any debugging, e.g., logging output, etc.
-	</span><span style="color:#eb6772;">a</span><span style="color:#abb2bf;">.</span><span style="color:#eb6772;">Config </span><span style="color:#adb7c9;">= </span><span style="color:#eb6772;">a</span><span style="color:#abb2bf;">.</span><span style="color:#eb6772;">BootstrapConfiguration</span><span style="color:#abb2bf;">()
-	</span><span style="color:#eb6772;">a</span><span style="color:#abb2bf;">.</span><span style="color:#eb6772;">Logger </span><span style="color:#adb7c9;">= </span><span style="color:#eb6772;">logging</span><span style="color:#abb2bf;">.</span><span style="color:#eb6772;">Load</span><span style="color:#abb2bf;">(</span><span style="color:#eb6772;">a</span><span style="color:#abb2bf;">.</span><span style="color:#eb6772;">Config</span><span style="color:#abb2bf;">)
-}
-</span></code></pre><pre style="background-color:#2b303b;">
-<code><span style="color:#abb2bf;">lfe&gt; (</span><span style="color:#cd74e8;">defrecord </span><span style="color:#5cb3fa;">person</span><span style="color:#abb2bf;">
-       name
-       address
-       age)
-set-person-age
-
-</span><span style="font-style:italic;color:#5f697a;">;; Use the generated record constructor:
-</span><span style="color:#abb2bf;">lfe&gt; (make-person name </span><span style="color:#9acc76;">&quot;Ford Prefect&quot;</span><span style="color:#abb2bf;">
-                       address </span><span style="color:#9acc76;">&quot;Betelgeuse Seven&quot;</span><span style="color:#abb2bf;">
-                       age </span><span style="color:#db9d63;">234</span><span style="color:#abb2bf;">))
-#(person </span><span style="color:#9acc76;">&quot;Ford Prefect&quot; &quot;Betelgeuse Seven&quot; </span><span style="color:#db9d63;">234</span><span style="color:#abb2bf;">)
-
-lfe&gt; (== </span><span style="color:#db9d63;">42 #b101010</span><span style="color:#abb2bf;">)
-</span><span style="color:#db9d63;">true</span><span style="color:#abb2bf;">
-
-lfe&gt; (integer_to_list </span><span style="color:#db9d63;">42 2</span><span style="color:#abb2bf;">)
-</span><span style="color:#9acc76;">&quot;101010&quot;</span><span style="color:#abb2bf;">
-
-lfe&gt; </span><span style="color:#db9d63;">#\a
-97</span><span style="color:#abb2bf;">
-
-lfe&gt; </span><span style="color:#9acc76;">&quot;regular string&quot;
-&quot;regular string&quot;</span><span style="color:#abb2bf;">
-
-lfe&gt; </span><span style="color:#db9d63;">#&quot;binary</span><span style="color:#abb2bf;"> string</span><span style="color:#9acc76;">&quot;
-#&quot;</span><span style="color:#abb2bf;">binary string</span><span style="color:#9acc76;">&quot;
-
-lfe&gt; (lists:reduce (lambda (x acc) &#39;thing) &#39;(a b c))
-
-(mref data &#39;key)
-
-(map-get &#39;key data)
-</span></code></pre>
     </div>
     <div class="container page-content blog-page-content">
       
       
-        <h1>New LFE Site!</h1>
-        <pre>
-          title: New LFE Site!
-          long title: 
-          description: LFE has a new main site
-          author: Duncan McGreggor
-          link: https:&#x2F;&#x2F;lfe.io&#x2F;blog&#x2F;posts&#x2F;1849-new-lfe-site&#x2F;
-          date: 2014-05-22
-          updated: 
-          content: Good news, everyone! Professor Farnsworth nodded off, and we&#x27;ve had some fun
+      
+      <div class="post-listing">
+        <h2><a href="https:&#x2F;&#x2F;lfe.io&#x2F;blog&#x2F;posts&#x2F;2014&#x2F;05&#x2F;22&#x2F;1849-new-lfe-site&#x2F;">New LFE Site!</a></h2>
+        
+        <div class="post-description">LFE has a new main site</div>
+        
+
+        <div class="post-excerpt">
+          <div>Good news, everyone! Professor Farnsworth nodded off, and we&#x27;ve had some fun
 while he slept.
-…
-        </pre>
+LFE has a new main site for the project: lfe.io.
+This has all…</div>
+          <a class="btn btn-primary btn-sm" href="https:&#x2F;&#x2F;lfe.io&#x2F;blog&#x2F;posts&#x2F;2014&#x2F;05&#x2F;22&#x2F;1849-new-lfe-site&#x2F;" role="button">Read more</a>
+        </div>
+        <div class="post-metadata">
+          <span class="post-author">
+            
+            
+            
+            <a href="/blog/authors/Duncan%20McGreggor">Duncan McGreggor</a>
+          </span> |
+          <span class="post-date">
+            <a href="/blog/posts/2014">2014-05-22</a>
+          </span> |
+          <span class="post-category">Category:
+            <a href="/blog/categories/site">site</a>
+          </span> |
+          <span class="post-tags">Tags:
+            
+            <a href="/blog/tags/#web">web</a>, 
+            
+            <a href="/blog/tags/#news">news</a>
+            
+          </span>
+        </div>
+      </div>
+
       
     </div>
 </main>
