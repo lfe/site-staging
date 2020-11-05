@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 	<title> - web</title>
-	<link href="https://lfe.io/blog/tags/web/atom.xml" rel="self" type="application/atom+xml"/>
-	<link href="https://lfe.io/blog"/>
+	<link href="staging.lfe.io/blog/tags/web/atom.xml" rel="self" type="application/atom+xml"/>
+	<link href="staging.lfe.io/blog"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
 	<updated>2014-05-22T00:00:00+00:00</updated>
-	<id>https://lfe.io/blog/tags/web/atom.xml</id>
+	<id>staging.lfe.io/blog/tags/web/atom.xml</id>
 	<entry xml:lang="en">
 		<title>New LFE Site!</title>
 		<published>2014-05-22T00:00:00+00:00</published>
 		<updated>2014-05-22T00:00:00+00:00</updated>
-		<link href="https://lfe.io/blog/posts/2014/05/22/1849-new-lfe-site/" type="text/html"/>
-		<id>https://lfe.io/blog/posts/2014/05/22/1849-new-lfe-site/</id>
+		<link href="staging.lfe.io/blog/posts/2014/05/22/1849-new-lfe-site/" type="text/html"/>
+		<id>staging.lfe.io/blog/posts/2014/05/22/1849-new-lfe-site/</id>
 		<content type="html">&lt;p&gt;Good news, everyone! Professor Farnsworth nodded off, and we&#x27;ve had some fun
 while he slept.&lt;&#x2F;p&gt;
 &lt;p&gt;LFE has a new main site for the project: &lt;a href=&quot;http:&#x2F;&#x2F;lfe.io&#x2F;&quot;&gt;lfe.io&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;

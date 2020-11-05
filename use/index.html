@@ -17,7 +17,7 @@
         content="(LFE:Using LFE)" />
     <meta name="twitter:description"
         content="LFE may be used as a shell, for scripting; as a development tool via its REPL; as a library; and as a full programming language in its own right, with a compiler that generates `.beam` files for use by the Erlang VM. This page aims to bring to your fingertips the resources you will need most in your daily use of LFE in one or more of these." />
-    <meta property="og:url" content="https://lfe.io/use/" />
+    <meta property="og:url" content="staging.lfe.io/use/" />
     <meta property="og:title" content="(LFE:Using LFE)" />
     <meta property="og:description"
         content="LFE may be used as a shell, for scripting; as a development tool via its REPL; as a library; and as a full programming language in its own right, with a compiler that generates `.beam` files for use by the Erlang VM. This page aims to bring to your fingertips the resources you will need most in your daily use of LFE in one or more of these." />
@@ -162,8 +162,8 @@
         </div>
     </div>
     <div class="container page-content">
-        <h1 id="lfe"><a href="https://lfe.io/use/#lfe">LFE</a></h1>
-<h2 id="the-repl"><a href="https://lfe.io/use/#the-repl">The REPL</a></h2>
+        <h1 id="lfe"><a href="staging.lfe.io/use/#lfe">LFE</a></h1>
+<h2 id="the-repl"><a href="staging.lfe.io/use/#the-repl">The REPL</a></h2>
 <p>As you get to know LFE, you'll find that you'll do a lot of your prototyping in the REPL. There are three primary ways you can do this:</p>
 <ol>
 <li>With Erlang and <code>rebar3</code> installed, running <code>rebar3 lfe repl</code> in a project directory will start up the LFE REPL and provide access to all your project modules, include files, and dependencies.</li>
@@ -171,7 +171,7 @@
 <li>Lastly, you can run the LFE REPL with only docker on your machine via <code>docker run -it lfex/lfe</code> (no Erlang, no <code>rebar3</code> necessary); for many people, this is the quickest, most pain-free way of trying out LFE.</li>
 </ol>
 <p>In all of the above, once you are in the REPL, you have access to the <code>(help)</code> function which will print out some help text for running a bunch of top-level commands. Also, you may start typing a function call (e.g., <code>(lists:</code>) and then double-tap <code>&lt;TAB&gt;</code> to provide a list of available functions from the given module. Very often this obviates any need to look up the function you want to call!</p>
-<h2 id="reference"><a href="https://lfe.io/use/#reference">Reference</a></h2>
+<h2 id="reference"><a href="staging.lfe.io/use/#reference">Reference</a></h2>
 <p>When <code>(help)</code> and tab-completion aren't enough, it's time to break out the books. The core LFE reference set (man page source files in Markdown format) is your friend:</p>
 <ul>
 <li><a href="https://github.com/rvirding/lfe/blob/develop/doc/src/lfe_guide.7.md">The LFE Guide</a></li>
@@ -189,7 +189,7 @@
 <ul>
 <li><a href="https://hub.docker.com/r/lfex/lfe">https://hub.docker.com/r/lfex/lfe</a></li>
 </ul>
-<h2 id="docs-lfe-io"><a href="https://lfe.io/use/#docs-lfe-io">docs.lfe.io</a></h2>
+<h2 id="docs-lfe-io"><a href="staging.lfe.io/use/#docs-lfe-io">docs.lfe.io</a></h2>
 <p>The docs site for LFE is quite old and almost entirely out of date, but it's linked here since it still has some jewels that haven't been ported elsewhere:</p>
 <ul>
 <li><a href="htt%5B://docs.lfe.io%5D">docs.lfe.io</a></li>
@@ -198,7 +198,7 @@
 <ul>
 <li><a href="http://docs.lfe.io/dev/index.html">docs.lfe.io/dev/</a></li>
 </ul>
-<h1 id="erlang"><a href="https://lfe.io/use/#erlang">Erlang</a></h1>
+<h1 id="erlang"><a href="staging.lfe.io/use/#erlang">Erlang</a></h1>
 <p><a href="http://erlang.org/doc/apps/erts/index.html">Erlang Run-Time System Application (ERTS) Reference Manual</a> - As an LFE programmer, this is one of the most powerful reference resources you can have at your fingertips. Once you get to the point to where you are ready to build production-ready applications, this will be a constant companion. In particular:</p>
 <ul>
 <li>The <a href="http://erlang.org/doc/man/erlang.html">erlang</a> module</li>
@@ -213,7 +213,7 @@
 <li>The <a href="https://erlang.org/doc/reference_manual/ports.html">Ports and Port Drivers</a> reference and the <a href="http://erlang.org/doc/tutorial/c_port.html">Erlang Interop/Ports User Guide</a></li>
 <li>The <a href="http://erlang.org/doc/apps/jinterface/jinterface_users_guide.html">Jinterface package</a> and the <a href="http://erlang.org/doc/apps/jinterface/index.html">Jinterface Reference Manual</a></li>
 </ul>
-<h1 id="rebar3"><a href="https://lfe.io/use/#rebar3">rebar3</a></h1>
+<h1 id="rebar3"><a href="staging.lfe.io/use/#rebar3">rebar3</a></h1>
 <p>One of the things you might find yourself needing is specialised <code>rebar3</code> plugins for your various LFE projects. You may write these in either Erlang or LFE (or, in fact, any BEAM language that has a <code>rebar3</code> compiler). There are a ton of good resources on the rebar3 project site, including:</p>
 <ul>
 <li><a href="https://www.rebar3.org/docs/getting-started">Getting Started</a></li>

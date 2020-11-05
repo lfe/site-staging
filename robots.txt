@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://lfe.io/sitemap.xml
+Sitemap: staging.lfe.io/sitemap.xml
